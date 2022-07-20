@@ -1,0 +1,68 @@
+@import "../../assets/scss/variables.scss";
+
+.home-footer {
+    display: flex;
+    background-color: black;
+    padding: 30px 75px;
+    justify-content: space-between;
+    margin-top: 100px;
+    box-shadow: 0 0 25px rgb(64, 64, 64);
+} 
+.home-footer__right {
+    display: flex;
+    gap: 75px;
+    align-items: flex-start;
+    color: $bac-color;
+    justify-content: space-between;
+    font-family: 'Segoe UI';
+    flex-wrap: wrap;
+}
+.home-footer__section {
+    display: flex;
+    flex-direction: column;
+}
+.home-footer__section-items {
+    padding-left: 0;
+    margin-top: 10px;
+    line-height: 24px;
+}
+.home-footer__section-title{
+    margin: 0;
+}
+.home-footer__section-item:hover {
+    text-decoration: underline;
+}
+@media only screen and(max-width:992px) {
+    .home-footer__left-img {
+        width: 130px;
+        height: 50px;
+    }
+    .home-footer__right {
+        gap: 40px;
+    }
+    
+}
+@media only screen and(max-width:992px) {
+    .home-footer {
+        margin-top: 75px;
+        }
+}
+@media only screen and(max-width:767px) {
+    .home-footer {
+        display: block;
+        padding: 25px 35px;
+        margin-top: 65px;
+        }
+        .home-footer__right {
+            margin-top: 10px;
+        }
+}
+@media only screen and(max-width:365px) {
+    .home-footer__right {
+        flex-direction: column;
+    }
+    .home-footer__left-img {
+        width: 110px;
+        height: 40px;
+    }
+}

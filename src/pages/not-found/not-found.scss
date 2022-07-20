@@ -1,0 +1,42 @@
+@import "../../assets//scss/variables.scss";
+.notfound__container {
+    display: flex;
+    flex-direction: column;
+    background-color: $bac-color;
+    height: 100vh;
+    padding: 10px 30px;
+}
+.notfound-main {
+    margin: 10% auto auto;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and(max-width:767px) {
+    .notfound-main {
+        margin-top: 17%;
+    }
+    .notfound-main__img {
+        width: 330px;
+        height: 170px;
+    }
+}
+@media only screen and(max-width:575px) {
+    .notfound-main {
+        margin-top: 20%;
+    }
+    .notfound-main__img {
+        width: 200px;
+        height: 110px;
+    }
+}
+@media only screen and(max-width:380px) {
+    .notfound-main {
+        margin-top: 25%;
+    }
+    .notfound-main__img {
+        width: 160px;
+        height: 90px;
+    }
+}

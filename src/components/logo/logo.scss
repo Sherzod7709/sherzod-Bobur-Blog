@@ -1,0 +1,20 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-title {
+    color: #000000;
+}
+.logo:hover {
+    text-shadow:0 0 1px rgb(80, 0, 0);
+}
+@media only screen and(max-width:575px){
+    .logo-img {
+        width: 45px;
+        height: 45px;
+    }
+    .logo-title {
+        font-size: 24px;
+    }
+}

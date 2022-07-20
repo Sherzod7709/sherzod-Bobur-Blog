@@ -1,0 +1,44 @@
+@import "../../assets/scss/variables.scss";
+
+.login__container {
+    padding: 0 20px;
+}
+.login-list {
+    width: 350px;
+    margin: 10% auto 0;
+}
+.login-title {
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.email-input{
+    padding: 12px 14px ;
+    border: 0;
+    background-color: #F4F4F4;
+    border-radius: $radius-btn;
+}
+.password-input {
+    padding: 12px 14px;
+    border: 0;
+    background-color: #F4F4F4;
+    border-radius: $radius-btn;
+}
+.login-btn {
+    padding: 11px;
+    color: $bac-color;
+    font-family: "Roboto Mono";
+    background-color: #000000;
+    border-radius: $radius-btn;
+}
+@media only screen and(max-width:767px){
+    .login-form {
+        width: 330px;
+    }
+}

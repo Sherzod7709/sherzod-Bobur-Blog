@@ -1,0 +1,71 @@
+
+@import "../../assets/scss/variables.scss";
+
+.home-post {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-top: 50px;
+    width: 750px;
+    border-bottom: 1px solid #DFDFDF;
+}
+.home-post__title {
+    line-height: 28px;
+    margin: 0;
+}
+.home-post__tittle-link {
+    color: $text-color;
+}
+.home-post__tittle-link:hover {
+    color: darkblue;
+    text-shadow: 0 0 1px rgb(236, 232, 232);
+}
+.home-post__header {
+    display: flex;
+    justify-content: space-between;
+    color: $small-color;
+}
+.home-post__data {
+    margin: 0;
+}
+.home-post__type {
+    margin: 0;
+}
+.home-main__oclock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 11px;
+}
+.hame-main__time {
+    color: $small-color;
+}
+@media only screen and(max-width:1440px){
+    .home-post {
+        width: 580px;
+    }
+}
+@media only screen and(max-width:992px){
+    .home-post {
+        width: 430px;
+    }
+}
+@media only screen and(max-width:767px){
+    .home-post {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+@media only screen and(max-width:575px){
+    .home-post {
+        width: 400px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+@media only screen and(max-width:465px){
+    .home-post {
+        width: 330px;
+        margin: 0 auto;
+    }
+}

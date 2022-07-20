@@ -1,0 +1,94 @@
+@import "../../assets/scss/variables.scss";
+.menu-form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 40px;
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+.menu-burger{
+    display: none;
+    margin-left: 115px;
+}
+.menu-label__radio:checked~.menu-label__style {
+    text-decoration: underline solid ;
+    text-decoration-color: $nav-color;
+    color: brown;
+}
+.menu-label__style:hover {
+    color: crimson;
+}
+@media only screen and(max-width:767px){
+    .menu-form {
+        display: none;
+        flex-direction: column;
+    }
+    .menu-label__style {
+        font-size: 20px;
+    }
+    .menu-burger {
+        margin-left: 60px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo {
+        margin-bottom: auto;
+    }   
+    .menuX-burger {
+        padding: 22px 0px 0 0;
+    }
+    .menu-list {
+        display: inline-block;
+        margin-left: 45px;
+        position: relative;
+    }
+    .header-list {
+        align-items: start;
+    }
+    .burger-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        row-gap: 20px;
+        right: auto;
+        left: -240px;
+        margin-top: 60px;
+        gap: 20px;
+    }
+}
+@media only screen and(max-width:650px) {
+    .burger-form {
+        left: -190px;
+    }
+}
+@media only screen and(max-width:545px) {
+    .menu-list {
+        margin-left: -20px;
+    }
+    .menu-burger {
+        margin-left: 0;
+    }
+    .burger-form {
+        left: -150px;
+    }
+}   
+@media only screen and(max-width:465px) {
+    .menu-burger {
+        margin-left: -60px;
+    }
+    .burger-form {
+        left: -100px;
+    }
+}     
+@media only screen and(max-width:397px) {
+    .menu-list {
+        margin-left: -60px;
+    }
+    .burger-form {
+        left: -80px;
+    }
+}
